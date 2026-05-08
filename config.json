@@ -1,0 +1,85 @@
+{
+  "supported_formats": ["stl", "obj"],
+  "default_output_dir": "~/3DAgent_outputs",
+  "max_generation_retries": 3,
+  "generation_timeout_seconds": 120,
+  "llm_options": [
+    {
+      "name": "GPT-5",
+      "provider": "openai",
+      "model": "gpt-5",
+      "vision": true,
+      "key_name": "OPENAI_API_KEY"
+    },
+    {
+      "name": "o3",
+      "provider": "openai",
+      "model": "o3",
+      "vision": true,
+      "key_name": "OPENAI_API_KEY"
+    },
+    {
+      "name": "Claude Opus 4.7",
+      "provider": "anthropic",
+      "model": "claude-opus-4-7",
+      "vision": true,
+      "key_name": "ANTHROPIC_API_KEY"
+    },
+    {
+      "name": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "vision": true,
+      "key_name": "ANTHROPIC_API_KEY"
+    },
+    {
+      "name": "Gemini 3.1 Pro Preview",
+      "provider": "google",
+      "model": "gemini-3.1-pro-preview",
+      "vision": true,
+      "key_name": "GOOGLE_API_KEY"
+    },
+    {
+      "name": "Gemini 3.1 Flash Preview",
+      "provider": "google",
+      "model": "gemini-3-flash-preview",
+      "vision": true,
+      "key_name": "GOOGLE_API_KEY"
+    },
+    {
+      "name": "Mistral Large",
+      "provider": "mistral",
+      "model": "mistral-large-latest",
+      "vision": false,
+      "key_name": "MISTRAL_API_KEY"
+    },
+    {
+      "name": "Llama 3.3 70B (Groq)",
+      "provider": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "vision": false,
+      "key_name": "GROQ_API_KEY"
+    },
+    {
+      "name": "DeepSeek V3",
+      "provider": "deepseek",
+      "model": "deepseek-chat",
+      "vision": false,
+      "key_name": "DEEPSEEK_API_KEY"
+    },
+    {
+      "name": "Grok-2",
+      "provider": "xai",
+      "model": "grok-2-latest",
+      "vision": true,
+      "key_name": "XAI_API_KEY"
+    },
+    {
+      "name": "Command R+",
+      "provider": "cohere",
+      "model": "command-r-plus",
+      "vision": false,
+      "key_name": "COHERE_API_KEY"
+    }
+  ]
+}
